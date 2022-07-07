@@ -1,0 +1,21 @@
+.fondoBody {
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background-image: url(./assets/ladrillosNegros.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+
+.fotoCarrousel {
+    background-size: cover;
+}
+
+
+/* Cócteles */
+.cardColor {
+    color: rgb(0, 0, 0);
+}
+
+
