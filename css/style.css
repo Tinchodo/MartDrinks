@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Itim&family=Josefin+Sans&family=Oswald&display=swap');
+
+
+/* font-family: 'Anton', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Itim', cursive;
+    background-color: rgba(59,59,59);
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+    padding: 20px 5%;
+    border-bottom: solid;
+    background-color: rgba(59,59,59);
+}
+
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 65px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover,
+.overlay a:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: rgb(240,239,236);
+}
+
+.header .nav-links li a:hover{
+    color: rgba(255,204,87,255);
+}
+
+.menu{
+    display: none;
+}
+
+.header .btn button,
+.header .menu button{
+    font-weight: 700;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover,
+.header .menu button:hover{
+    background-color:rgb(148,148,148) ;
+    color: rgba(255,204,87,255);
+    transform: scale(1.1);
+}
+
+.img-header{
+        object-fit: cover;
+        width: 100%;
+        height: 450px;
+        display:block;
+}
+
+.container{
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container p{
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+
+
+}
+
+.inicio{
+    color: rgb(214, 204, 204);
+    margin: 5%;
+    padding: 30px;
+    text-align: center;
+    border-top: solid;
+}
+
+
+
+@media screen and (max-width: 800px){
+    .nav-links, .btn{
+        display: none;
+    }
+    .menu{
+        display: inherit;
+    }
+}
+
+/* Nav mobile*/
+.header a{
+    text-decoration: none;
+}
+
+.header .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 101;
+    left: 0;
+    top: 0;
+    background-color: rgba(60,60,60, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: rgb(240,239,236);
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus{
+    color: yellow;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height:450px){
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+ /* ------ COCKTAILS ----- */
+.body-cocktail{
+    background-color: rgb(0, 0, 0);
+}
+
+.container2{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.neon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+#text {
+    text-align:center;
+    border:5px solid #1086e8;
+    width:40%;
+    border-radius:20px;
+
+    animation: border-flicker 2s linear infinite;
+  }
+  
+  .neon h1 {
+    margin: 5%;
+    color:#FF00E6;
+    font-size: 5em;
+    letter-spacing:10px;
+    animation: text-flicker 3s linear infinite;
+  }
+  
+  
+  @keyframes text-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    
+    2% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    8% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    9% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    12% {
+      opacity:0.1;
+      text-shadow: 0px 0px rgba(242, 22, 22, 1);
+    }
+    20% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    25% {
+      opacity:0.3;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    30% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    
+    70% {
+      opacity:0.7;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    
+    72% {
+      opacity:0.2;
+      text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    
+    77% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    100% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+  }
+  
+  @keyframes border-flicker {
+    0% {
+      opacity:0.1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+    }
+    2% {
+      opacity:1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+    }
+    4% {
+      opacity:0.1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+    }
+    
+    8% {
+      opacity:1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+    }
+    70% {
+      opacity:0.7;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+    }
+    100% {
+      opacity:1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+    }
+  }
+  
+  @media screen and (max-width:800px){
+    #text{
+        width:100%;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+    .neon h1{
+        font-size: 3em;
+    }
+  }
+
+
+/* -----------Cards---------- */
+.container1{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    width: 240px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.car-1, .car-2, .car-3, .car-4, .car-5, .car-6, .car-7{
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 5px 10px #000;
+    
+}
+
+.car-1{
+    background: linear-gradient(transparent 90%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+}
+
+ .car-1, .car-2, .car-3, .car-4, .car-5, .car-6, .card-7{
+    font-size: 25px;
+    color: #000000;
+}
+
+
+.car-2{
+    background: linear-gradient(transparent 90%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+}
+
+.car-3{
+    background: linear-gradient(transparent 90%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+}
+
+.car-4{
+    background: linear-gradient(transparent 90%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+}
+
+.car-5{
+    background: linear-gradient(transparent 90%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+}
+
+.car-6{
+    background: linear-gradient(transparent 90%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.car-7{
+    background: linear-gradient(transparent 90%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+}
+
+.card i{
+    color: #cba650;
+}
+
+.descripcion{
+    padding: 5px 20px;
+    border-bottom: solid 1px #cba650;
+    display: flex;
+    gap: 10px;
+}
+
+.descripcion p{
+    font-size: 20px;
+}
+
+.item{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.item i{
+    color: #cba650;
+    font-size: 18px;
+}
+
+.content-card{
+    margin-top: 15px;
+}
+
+.list{
+    padding: 10px 25px;
+}
+
+
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background: #cba650;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+
+.list-none{
+    list-style-type: none;
+}
+
+/* -------- INFORMATION --------- */
+.body-information{
+    margin: 0; 
+    padding: 0;
+    background: black;
+    width: 100%;
+    font-family: 'Itim', cursive;
+}
+
+.parallax-completo{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/bar.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-hero{
+    background: #000;
+    padding: 18px;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.center{
+    max-width: 1100px;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+.espacio{
+    padding: 30px 0 60px 0;
+    color: #fff;
+}
+
+.espacio h2{
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.espacio p{
+    text-align: justify;
+}
+
+.parallax-jr{
+    height: 450px;
+    background-image: url(../assets/caipirinha.avif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax-jr h2, .parallax-jr1 h2, .parallax-jr2 h2{
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-weight: 1000;
+}
+
+.parallax-jr1{
+    height: 450px;
+    background-image: url(../assets/piña\ colada8.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax-jr2  {
+    height: 450px;
+    background-image: url(../assets/cointreau.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
